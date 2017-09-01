@@ -1,7 +1,5 @@
 const initialState = {
-    history: [
-        {}
-    ]
+    history: []
 };
 
 const translate = (state = initialState, action) => {

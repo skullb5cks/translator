@@ -4,7 +4,7 @@ import Editor from '../components/Editor';
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    userInfo: state.userInfo
+    editor: state.editor
   }
 }
 
@@ -16,9 +16,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   }
 }
 
-const UserInfo = connect(
+const Translator = connect(
     mapStateToProps,
     mapDispatchToProps
-)(User);
+)(Editor);
 
-export default UserInfo;
+export default Translator;
